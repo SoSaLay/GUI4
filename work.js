@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     for (let row = 0; row < starsRows; row++) {
-        for (let col = 0; col < 6; col++) { 
+        for (let col = 0; col < 5; col++) { 
             const star = document.createElement('div');
             star.className = 'star';
             corner.appendChild(star);
         }
     }
-  /* Two For loop to make rows. First loop cereate row, 2nd loop caps the amount of stars 
-  per row. We know the overall loop can only run up to 9x bc of higharhcy condition.
+  /* Two for loop to make rows. The inner loop creates 5 rows. The first loop add 10 stars per row.
+   We know the overall loop can only run up to 10x bc of higharhcy condition.
     */
 
 });
