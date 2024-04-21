@@ -1,0 +1,78 @@
+body, html{
+height: 100vh;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+#flag {
+    width: 80vw; 
+    height: 42vw; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    /* Using flex f helps evenly space and 
+    organize the stripes and corner easily.
+     */
+    
+}
+
+.stripe {
+    flex: 1;
+    width: 100%;
+     
+}
+
+.red { background-color: red; }
+.white { background-color: white; }
+
+.corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; 
+    height: 55%;
+    background-color: #000080;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0%; 
+    justify-content: space-around;
+   
+}
+
+.star {
+    width: 10%; 
+    height: 10%; 
+    background-image: url('stars.png'); 
+    background-size: 1000% 1000%;;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media(max-width:480){
+    .star{
+        background-size: 90px 90px;
+        width: 10%;
+        height: 15%;
+    }
+
+    #flag{
+        width: 90vw;
+        height:50vw
+    }
+}
+
+@media(max-width:768){
+    .star{
+        background-size: 150x 150px;
+        width: 25%;
+        height:30%;
+    }
+}
